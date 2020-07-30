@@ -7,7 +7,7 @@ WORKDIR src/
 COPY . .
 RUN pip3 install -U versiontools
 RUN pip3 install module.ipynb
-RUN rm /src/Mmk/data/data.xls
+RUN rm /src/Mmk/data/data.csv
 WORKDIR /src/notebooks
 ENV TINI_VERSION v0.6.0
 ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /usr/bin/tini
